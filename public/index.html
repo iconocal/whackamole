@@ -3,28 +3,38 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Whackamole</title>
+	<link rel="stylesheet" type="text/css" href="/css/whack_style.css">
 	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<script src="/js/jquery.min.js"></script>
-    <script>
-        	$('document').ready(function() {
-            $('#mole').fadeIn();
-            $('#mole').click(function() {
-            	$('#mole').fadeOut();
-            });
-
-        });
-    </script>
+	
 </head>
 <body>
-	<div class="container">
+	
 	<h1>Whack-A-Mole!</h1>
 	<br>
-	<img id="mole" src="/img/hairymole.jpeg" alt="Hairy Mole">
+	<img id="mole" src="/img/molehat.jpg" alt="Hairy Mole">
 
 
+	<div id="gameBox">
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
+		<div class="emptyHole"></div>
 
 
 	</div>
+
+
+
+
 	
+<script src="/js/jquery.min.js"></script>
+<script src="/js/whackamole.js"></script>
+<!-- // link to javascript file -->
+   
 </body>
 </html>
