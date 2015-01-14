@@ -4,7 +4,7 @@ body {
 }
 .emptyHole {
 /*	border: 2px solid black;*/
-	background-color: blue;
+	background-color: black;
 	height: 128px;
 	width: 128px;
 	margin: 30px;
@@ -19,13 +19,23 @@ body {
 	background-repeat: no-repeat;
 }
 
+#myScore {
+	font-size: 30px;
+}
 
+#shotClock {
+	font-size: 30px;
+}
+
+span {
+	font-size: 30px;
+}
 
 #gameBox {
 	border: 1px solid black;
 	background-color: blue;
-	height: 600px;
-	width: 600px;
+	height: 400px;
+	width: 800px;
 	padding: 10px;
 	margin-left: 300px;
 	margin-bottom: 10px;
