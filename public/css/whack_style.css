@@ -3,19 +3,19 @@ body {
 
 }
 .emptyHole {
-	border: 2px solid black;
-	background-color: black;
-	height: 75px;
-	width: 75px;
-	margin: 50px;
+/*	border: 2px solid black;*/
+	background-color: blue;
+	height: 128px;
+	width: 128px;
+	margin: 30px;
 	position: relative;
 	float: left;
 }
 
 .activeHole {
 	/*border: 1px solid black;*/
-	background-color: red;
-	background-image: url(/img/molehat.jpg);
+/*	background-color: red;*/
+	background-image: url(/img/ted-cruz.png);
 	background-repeat: no-repeat;
 }
 
