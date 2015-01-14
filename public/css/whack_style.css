@@ -2,6 +2,9 @@ body {
 	color: white;
 
 }
+
+
+
 .emptyHole {
 /*	border: 2px solid black;*/
 	background-color: black;
@@ -12,6 +15,7 @@ body {
 	float: left;
 }
 
+
 .activeHole {
 	/*border: 1px solid black;*/
 /*	background-color: red;*/
@@ -19,11 +23,17 @@ body {
 	background-repeat: no-repeat;
 }
 
+#titleBox {
+	margin-left: 10px;
+}
+
 #myScore {
+	margin-left: 25px;
 	font-size: 30px;
 }
 
 #shotClock {
+	margin-left: 25px;
 	font-size: 30px;
 }
 
@@ -37,6 +47,6 @@ span {
 	height: 400px;
 	width: 800px;
 	padding: 10px;
-	margin-left: 300px;
+	margin-left: 200px;
 	margin-bottom: 10px;
 }

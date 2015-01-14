@@ -34,7 +34,9 @@ function timer() {
 function countdown() {
   if (timeLeft == -1) {
     clearInterval(timerId);
+    clearInterval(whackTime);
     $('#startButton').off();
+    $(game[random]).off('click',keepScore);
     console.log('Game Over!');
     console.log(timeLeft);
   } else {
@@ -58,24 +60,13 @@ function keepScore() {
 
 
 
-
-
-
-
-
-
-
 // Event Listeners
 
-$('#startButton').on('click', timer);
+$('#startButton').on('click', function() {
+	timer();
+	whackTime = setInterval(moveBox, 1000);
+});
 
-// $('#startButton').click(function(){
-// 	whackTime = setInterval(moveBox, 1000);
-// });
-
-// $('#stopButton').click(stopClicking);
-
-// $('#increment').on('click',shotClock);
 
 
 
