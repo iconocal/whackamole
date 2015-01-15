@@ -1,12 +1,17 @@
 body {
 	color: white;
+}
 
+#sickle {
+    cursor:url("/img/commie.png"), auto;
 }
 
 
+span {
+	font-size: 30px;
+}
 
 .emptyHole {
-/*	border: 2px solid black;*/
 	background-color: black;
 	height: 128px;
 	width: 128px;
@@ -15,11 +20,8 @@ body {
 	float: left;
 }
 
-
 .activeHole {
-	/*border: 1px solid black;*/
-/*	background-color: red;*/
-	background-image: url(/img/ted-cruz.png);
+	background-image: url(/img/ted-cruz-round.jpg);
 	background-repeat: no-repeat;
 }
 
@@ -37,9 +39,6 @@ body {
 	font-size: 30px;
 }
 
-span {
-	font-size: 30px;
-}
 
 #gameBox {
 	border: 1px solid black;

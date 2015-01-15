@@ -5,21 +5,23 @@
 	<title>Whackamole</title>
 	<link rel="stylesheet" type="text/css" href="/css/whack_style.css">
 	<link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
 </head>
+
 <body>
+
+	<audio id='slap-src' src="/audio/Slap.mp3" preload: auto></audio>
 	
-<div id="titleBox">
-	<h1>Whack-A-Moron!</h1>
-</div>
+	<div id="sickle">
+
+	<div id="titleBox">
+		<h1>Whack-A-Moron!</h1>
+	</div>
 
 	<div id="shotClock">Clock: <span></span></div>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
-
 	<div id="myScore">Score: <span></span></div>
 
-
-
 	<div id="gameBox">
+		<div class="emptyHole "></div>
 		<div class="emptyHole"></div>
 		<div class="emptyHole"></div>
 		<div class="emptyHole"></div>
@@ -27,18 +29,11 @@
 		<div class="emptyHole"></div>
 		<div class="emptyHole"></div>
 		<div class="emptyHole"></div>
-		<div class="emptyHole"></div>
-
-
-
 	</div>
 
 	<img id="startButton" src="/img/play-button.jpg" alt="Start Button">
-<!-- 	<img id="stopButton" src="/img/stop.png" alt="Stop Button"> -->
-
-
-
-
+	
+	</div>
 	
 <!-- // link to javascript file -->
 <script src="/js/jquery.min.js"></script>

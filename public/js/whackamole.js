@@ -1,15 +1,16 @@
 // Define Variables
 
-// Generate A Random Number
- var random;
+var random;
 
-// // Define an array of boxes
- var game = $('#gameBox').children();
+var game = $('#gameBox').children();
 
- var whackTime = null;
+var whackTime = null;
 
- var score = null;
+var score = null;
 
+var timeLeft = 10;
+
+var timerId;
 
 
 // Define Functions
@@ -19,18 +20,18 @@ function getRandomInt() {
   return Math.floor(Math.random() * (8 - 0)) + 0;
 }
 
+// Clear whackTime and remove event handlers
 function stopClicking() {
-	clearInterval(whackTime);
-	$('.emptyHole').off();
+  clearInterval(whackTime);
+  $('.emptyHole').off();
 }
 
-var timeLeft = 5;
-var timerId;
-
+// sets internal game interval of 1 second
 function timer() {
 	timerID = setInterval(countdown, 1000);
 }
 
+// main game functions
 function countdown() {
   if (timeLeft == -1) {
     clearInterval(timerId);
@@ -39,20 +40,23 @@ function countdown() {
     $(game[random]).off('click',keepScore);
     console.log('Game Over!');
     console.log(timeLeft);
-  } else {
+  } 
+  else {
     $('#shotClock span').html(timeLeft);
     timeLeft--;
-  }
+    }
 }
 
+// randomly places activeHole and event handler for scorekeeping
 function moveBox() {
 	random = getRandomInt();
 	$(game).removeClass('activeHole');
-    $(game[random]).addClass('activeHole');
-    $(game[random]).on('click',keepScore);
+  $(game[random]).addClass('activeHole');
+  $(game[random]).on('click',keepScore);
 
 }
 
+// increments score counter and sends to html
 function keepScore() {
 	score = score +1;
 	$('#myScore span').html(score);
